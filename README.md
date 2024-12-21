@@ -2,16 +2,19 @@
 
 **LSM System** is a simple role based school management system.
 
-### Installation
+### How to make it work
 01. `git clone https://github.com/sanz/laravel-school-management-system.git`
 02. `cd laravel-school-management-system`
-03. `composer install`
-04. `npm install`
-05. `cp .env.example .env`
-06. `php artisan key:generate`
-07. `php artisan migrate`
-08. `php artisan db:seed`
-09. `php artisan serve`
+03. `In your .env file, enter these credentials
+    DB_CONNECTION=pgsql
+    DB_HOST=db
+    DB_PORT=5432
+    DB_DATABASE=siimt
+    DB_USERNAME=bebelino
+    DB_PASSWORD=password`
+04. `Enter this command in the terminal: docker-compose up --build -d`
+5. `Access the application at localhost:8000`
+
 
 ### Packages
 01. `spatie/laravel-permission`
